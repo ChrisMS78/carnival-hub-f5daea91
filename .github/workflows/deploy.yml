@@ -38,5 +38,5 @@ jobs:
           log-level: verbose  # mehr Details in den Logs, hilft beim Debuggen
 
           local-dir: dist/
-          server-dir: /www/keb   # ggf. /www/ oder /www/deinedomain.de/ anpassen
+          server-dir: /www/keb/   # ggf. /www/ oder /www/deinedomain.de/ anpassen
 
