@@ -29,5 +29,10 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+
+          # WICHTIG: FTPS aktivieren
+          protocol: ftps
+          port: 21          # bei HostEurope in der Regel 21, nur ändern, wenn im KIS etwas anderes steht
+
           local-dir: dist/
-          server-dir: ./   # ggf. anpassen: z.B. /www/ oder /www/deinedomain.de/
+          server-dir: ./    # oder z.B. /www/ bzw. /www/deinedomain.de/
