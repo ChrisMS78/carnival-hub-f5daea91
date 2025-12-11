@@ -5,7 +5,6 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // WICHTIG: Ziel-URL ist /keb → base entsprechend setzen
   base: "/keb/",
 
   server: {
