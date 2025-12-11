@@ -23,7 +23,6 @@ jobs:
       - name: Build project
         run: npm run build
 
-
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
@@ -31,12 +30,12 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
 
-          protocol: ftps   # FTPS (explizit)
-          port: 21         # Standard-FTP-Port bei HostEurope
-
-          security: loose  # wichtig: toleranter mit dem Zertifikat umgehen
+          protocol: ftps
+          port: 21
+          security: loose
           log-level: verbose  # mehr Details in den Logs, hilft beim Debuggen
-
+          
           local-dir: dist/
-          server-dir: /www/keb/   # ggf. /www/ oder /www/deinedomain.de/ anpassen
+          server-dir: /www/keb/
+          dangerous-clean-slate: true
 
