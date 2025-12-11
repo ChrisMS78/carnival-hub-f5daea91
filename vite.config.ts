@@ -5,6 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // WICHTIG: Build funktioniert nur im Unterordner, wenn base gesetzt ist:
+  base: "/www/keb/",
+
   server: {
     host: "::",
     port: 8080,
