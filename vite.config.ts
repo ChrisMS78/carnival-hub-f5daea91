@@ -5,6 +5,9 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Seite läuft unter http://christian-riekenberg.de/www/keb/
+  base: "/www/keb/",
+
   server: {
     host: "::",
     port: 8080,
